@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+//Bootstrap 5 Grid system
+@import "~bootstrap/dist/css/bootstrap.min.css";
+//@import "~bootstrap/dist/css/bootstrap-reboot.css";
+//@import "~bootstrap/dist/css/bootstrap-grid.css";
+//@import "~bootstrap/dist/css/bootstrap-utilities.css";
+// material
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    background-color: #eaecee;
+}
+
+.container {
+    max-width: 1024px !important;
+}
+
+.dialog-form {
+    width: 500px;
+}
+
+.dialog-form .mdc-dialog__actions {
+    padding: 20px 24px;
+}

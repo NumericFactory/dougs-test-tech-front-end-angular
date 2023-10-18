@@ -1,0 +1,24 @@
+li {
+    padding: 0 !important;
+}
+
+.wording {
+    text-align: left;
+}
+
+.amount {
+    text-align: right;
+}
+
+div>span {
+    padding: 9px 14px;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+        width: 25%;
+    }
+
+    &:nth-child(2) {
+        width: 50%;
+    }
+}

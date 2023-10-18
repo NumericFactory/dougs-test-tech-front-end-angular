@@ -1,0 +1,7 @@
+<li class="list-group-item" *ngIf="mouvementItem">
+    <div class="d-flex justify-content-between">
+        <span>{{mouvementItem.date | date:'dd/MM/yyyy'}}</span>
+        <span class="wording">{{mouvementItem.wording}}</span>
+        <span class="amount">{{mouvementItem.amount | currency:'EUR':'symbol':'1.2-2':'fr-FR'}}</span>
+    </div>
+</li>

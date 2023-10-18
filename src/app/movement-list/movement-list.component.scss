@@ -1,0 +1,28 @@
+.head-list {
+    padding: 10px;
+    background: #012c51;
+    color: aliceblue;
+    position: sticky;
+    top: 50px;
+    z-index: 9;
+
+    & div {
+        padding: 0 9px;
+        font-size: 15px;
+        color: #77addc;
+
+        &.date {
+            width: 25%;
+        }
+
+        &.wording {
+            width: 50%;
+            text-align: left;
+        }
+
+        &.amount {
+            width: 25%;
+            text-align: right;
+        }
+    }
+}

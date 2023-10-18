@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Charger de nouvelles données</h1>
+
+<form (submit)="generateMovementsList(movementsTypeGeneration.value, $event)">
+    <div mat-dialog-content>
+
+        <label>A partir de (par défaut 01/01/2023)</label>
+        <input #inputDate (change)="changeStartDate(inputDate.value)" [value]="startAt" max="2023-09-01"
+            class="form-control mb-3" type="date">
+
+        <label>Choisissez</label>
+        <select #movementsTypeGeneration class="form-select mb-3">
+            <option *ngFor="let type of options" [value]="type">
+                {{optionsGenerate2LabelMapping[type]}}
+            </option>
+        </select>
+
+        <button [mat-dialog-close]="true" mat-icon-button type="button" style="position:absolute;top:0;right: 0">
+            <mat-icon>close</mat-icon>
+        </button>
+
+    </div>
+
+
+    <div mat-dialog-actions align="end">
+        <button class="btn btn-outline-primary me-2">
+            Générer
+        </button>
+    </div>
+</form>

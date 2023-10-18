@@ -1,0 +1,7 @@
+<li class="list-group-item">
+    <div class="d-flex justify-content-between">
+        <span class="date">{{bankStatementItem.date | date:'dd/MM/yyyy'}}</span>
+        <span class="wording">Relevé</span>
+        <span class="balance">{{bankStatementItem.balance | currency:'EUR':'symbol':'1.2-2':'fr-FR'}}</span>
+    </div>
+</li>

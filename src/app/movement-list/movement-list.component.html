@@ -1,0 +1,14 @@
+<div class="head-list d-flex justify-content-between">
+    <div class="date w25">Date</div>
+    <div class="wording w50">Libellé</div>
+    <div class="amount w25">Montant</div>
+</div>
+
+<ul class="list-group" *ngIf="dataSvc.movements$AndBalances$ | async as movementsAndBalances">
+    <!-- list de mouvements et soldes de relevés bancaires-->
+    <div *ngFor="let item of movementsAndBalances">
+        <dougs-item-movement [mouvementItem]="item" *ngIf="item.wording"></dougs-item-movement>
+        <dougs-item-bank-balance [bankStatementItem]="item" *ngIf="!item.wording"></dougs-item-bank-balance>
+    </div>
+
+</ul>
